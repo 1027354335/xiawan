@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xtoken.gradetoken.mapper.TMenuMapper">
+
+    <resultMap id="BaseResultMap" type="com.xtoken.gradetoken.entity.TMenu">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="url" column="url" jdbcType="VARCHAR"/>
+            <result property="path" column="path" jdbcType="VARCHAR"/>
+            <result property="component" column="component" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="iconcls" column="iconCls" jdbcType="VARCHAR"/>
+            <result property="keepalive" column="keepAlive" jdbcType="BOOLEAN"/>
+            <result property="requireauth" column="requireAuth" jdbcType="BOOLEAN"/>
+            <result property="parentid" column="parentId" jdbcType="INTEGER"/>
+            <result property="enabled" column="enabled" jdbcType="BOOLEAN"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,url,path,
+        component,name,iconCls,
+        keepAlive,requireAuth,parentId,
+        enabled
+    </sql>
+</mapper>
